@@ -1,0 +1,13 @@
+{% extends 'base.html'  %}
+{% block title %}
+注册
+{% end %}
+{% block body %}
+    <form action="" method="post">
+        {% module xsrf_form_html() %}
+        请输入用户名：<input type="text" name="username"><br>
+        请输入密码：<input type="password" name="password"><br>
+        请再次输入密码：<input type="password" name="repeat_password"><br>
+        <button type="submit">注册</button>
+    </form>
+{% end %}
